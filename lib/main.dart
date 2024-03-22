@@ -1,3 +1,4 @@
+import 'package:empat_project_4/components/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,12 +10,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      title: "BottomNavigationTabbar",
+      theme: ThemeData(primarySwatch: Colors.blue),
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(),
     );
   }
 }
